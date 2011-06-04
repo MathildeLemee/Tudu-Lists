@@ -32,7 +32,8 @@ public class Level3MonitorFilterTest {
                   }
 
    *
-   *refactoring
+   * Duree max : 10 minutes
+   * refactoring
    *
 
     @Test
