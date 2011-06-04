@@ -1,7 +1,11 @@
 package tudu.security;
 
 import org.easymock.EasyMock;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.test.util.ReflectionTestUtils;
 import tudu.domain.Role;
@@ -13,8 +17,21 @@ import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class UserDetailsServiceImplTest {
+//Niveau2
+public class Level3UserDetailsServiceImplMockitoTest {
+    @Mock
+    UserService userService;
+    @InjectMocks
+    UserDetailsServiceImpl userDetailsService = new UserDetailsServiceImpl();
 
+    @Before
+    public void before() {
+        MockitoAnnotations.initMocks(this);
+
+    }
+
+    /* Le test suivant a été ecris avec EasyMock. L'écrire à nouveau en utilisant la syntaxe BDD Mockito et en utilisant les assertions de fest assert a la place des assertEquals
+   * assertNotNull*/
     @Test
     public void testLoadUserByUsername() {
         UserDetailsServiceImpl authenticationDAO = new UserDetailsServiceImpl();

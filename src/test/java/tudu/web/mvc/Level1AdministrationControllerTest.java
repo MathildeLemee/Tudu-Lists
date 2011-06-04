@@ -32,8 +32,9 @@ public class Level1AdministrationControllerTest {
 
 
     /*
-   *  - Vérifier dans un test que pour la page "configuration" les propriétés smtp (et uniquement celles là) soit donnée au model
-    **/
+    * Vérifier dans un test que pour la page "configuration" les propriétés smtp (et uniquement celles là) soit donnée au model
+    * Méthode :  display
+    */
     @Test
     public void display_should_put_smtp_config_properties_in_admin_model_when_page_is_configuration() throws Exception {
         // given

@@ -15,8 +15,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
-//Niveau1
 public class Level1UserDetailsServiceImplMockitoTest {
+
     @Mock
     UserService userService;
     @InjectMocks
@@ -29,8 +29,9 @@ public class Level1UserDetailsServiceImplMockitoTest {
     }
 
     /*
-    niveau 1
-    verifier que la methode loadByUsername renvoie le bon login/password/les bonnes autoritees correspondant a l User renvoye par le mock de userService.findUser
+    * Type : Test état
+    * Vérifier que la méthode loadByUsername renvoie le bon login/password/les bonnes autoritées correspondant a l User renvoyé par le mock de userService.findUser
+    * Méhode : loadUserByUsername
    */
     @Test
     public void userDetails_should_correspond_to_the_user_found() {

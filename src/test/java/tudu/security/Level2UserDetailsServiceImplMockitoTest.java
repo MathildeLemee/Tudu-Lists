@@ -26,8 +26,11 @@ public class Level2UserDetailsServiceImplMockitoTest {
     }
 
     @Test(expected = UsernameNotFoundException.class)
-    //niveau 2 - simuler une levee d exceptions - tester que la methode leve bien une UsernameNotFoundException si la methode findBy leve une ObjectRetrievalFailureException
-    public void testLoadUserByUsername() {
+    /*
+    * Simuler une levée d'exceptions - tester que la methode lève bien une UsernameNotFoundException si la méthode findBy lève une ObjectRetrievalFailureException
+    * Méhode : loadUserByUsername
+
+    */public void testLoadUserByUsername() {
 
         //given
         when(userService.findUser("test_user")).thenThrow(new ObjectRetrievalFailureException("simulee", null));

@@ -31,10 +31,8 @@ public class Level3UserServiceImplMockitoTest {
     }
 
     /*
-    comment faire en sorte de verifier que la liste de todo a bien pour nom welcome
-     sans modifier la classe User
-     2 methodes
-
+    Vérifier que la liste todo a bien pour name Welcome!
+    Méthode :  createNewTodoList
     */
     @Test
     public void new_todolist_should_be_named_welcome_1() throws UserAlreadyExistsException {
@@ -50,7 +48,10 @@ public class Level3UserServiceImplMockitoTest {
         assertEquals("todo list should be named welcome", "Welcome!", todo.getName());
     }
 
-    //ArgumentMatcher
+    /*
+    Vérifier que la liste todo a bien pour name Welcome! - autre méthode
+    Méthode :  createNewTodoList
+    */
     class IsTodoListEquals extends ArgumentMatcher<TodoList> {
         TodoList todo;
 

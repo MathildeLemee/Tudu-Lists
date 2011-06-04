@@ -34,7 +34,10 @@ public class Level1UserServiceImplMockitoTest {
     }
 
     /*
-    test etat - utilisation when pour mocker l appel a entityManager.find et retourner le user en variable de classe
+    Type : Test état
+    Vérifier que l utilisateur retourné par le service correspond bien à celui attendu.
+    Méthode : findUser
+    Aide : utilisation when pour mocker l appel a entityManager.find et retourner le user en variable de classe
     */
     @Test
     public void find_user_should_return_the_user() {
@@ -50,8 +53,10 @@ public class Level1UserServiceImplMockitoTest {
 
     @Test
     /*
-    test comportement - verifier que l appel a l entity manager a bien été effectué avec le user passé a update user
-
+    Type : Test Comportement
+    Vérifier que l appel a l'entity manager a bien été effectué avec le bon user
+    Méthode : updateUser
+    Aide : Utilisation de verify
     */
     public void update_user_should_call_entityManager_merge() {
         //when
@@ -63,8 +68,9 @@ public class Level1UserServiceImplMockitoTest {
 
     @Test
     /*
-    test etat - verifier que le login du user renvoyée par findUser est bien equivalent a celui renvoyé par le mock entityManager.find
-
+    Type : Test état
+    Vérifier que l'appel a findUser("toto") entraine bien un appel a entityManager.find avec le meme login.
+    Méthode : findUser
     */
     public void user_should_be_retrieved() {
         //given
@@ -79,8 +85,8 @@ public class Level1UserServiceImplMockitoTest {
 
 
     /*
-    test etat - methode findUser - controler que si l entityManager find renvoie null une exception de type
-    ObjectRetrievalFailureException est bien levée
+    Vérifier qu'une exception de type ObjectRetrievalFailureException est bien levée si l entityManager find renvoie null
+    Méthode : findUser
     */
     @Test(expected = ObjectRetrievalFailureException.class)
     public void error_should_be_thrown_when_a_user_is_not_found() {
@@ -89,12 +95,12 @@ public class Level1UserServiceImplMockitoTest {
 
     }
 
+    /*
+    Vérifier qu'une exception de type UserAlreadyExistsException est bien levée si le login existe deja
+    Méthode : createUser
+    */
 
     @Test(expected = UserAlreadyExistsException.class)
-    /*
-    test etat - erreur UserAlreadyExistsException
-
-    */
     public void exception_should_be_thrown_when_creating_an_already_existed_user() throws UserAlreadyExistsException {
         //given
         when(entityManager.find(User.class, user.getLogin())).thenReturn(user);
@@ -102,11 +108,12 @@ public class Level1UserServiceImplMockitoTest {
         userService.createUser(user);
     }
 
-    @Test
     /*
-    garantir que si l user n existe pas, la methode persist de l entity manager a bien été appelée
-
+    Type : Test Comportement
+    Vérifier que l'utilisateur a bien été sauvegardé
+    Méthode : createUser
     */
+    @Test
     public void new_user_should_be_saved() throws UserAlreadyExistsException {
         //given
 

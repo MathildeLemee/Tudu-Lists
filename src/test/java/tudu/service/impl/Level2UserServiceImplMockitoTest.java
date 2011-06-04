@@ -31,8 +31,9 @@ public class Level2UserServiceImplMockitoTest {
     }
 
     /*
-verifier que l on recupere bien RuntimeException en sortie de updateUser si la methode Merge de l entityManager leve une RuntimeException
- */
+    * Vérifier que l on récupère bien uneRuntimeException en sortie de updateUser si la methode Merge de l entityManager leve une RuntimeException
+    * Méthode : updateUser
+    */
     @Test(expected = RuntimeException.class)
     public void when_an_exception_is_thrown_by_entityManager_then_rethrow() {
         //given
@@ -44,10 +45,12 @@ verifier que l on recupere bien RuntimeException en sortie de updateUser si la m
     /*
     LES METHODES SUIVANTES SONT UNIQUEMENT LA POUR APPRENDRE LA SYNTAXE. CES TESTS SONT EXTREMEMENTS FRAGILES, A MANIPULER AVEC PRECAUTIONS !
      */
-    @Test
-    /*garantir que si l user n existe pas, la methode persist de l entity manager a bien ete appele 4 fois
-     Ce genre de methode de test est a manipuler avec precaution ... Eviter de reproduire ca dans votre code !
+    /*
+    Type : Test Comportement
+    Vérifier que l appel a l'entity manager persist a bien été effectué 4 fois
+    Méthode : createUser
     */
+    @Test
     public void when_creation_of_a_new_user_then_4_calls_to_entityManager_persist() throws UserAlreadyExistsException {
         //given
 
@@ -59,9 +62,12 @@ verifier que l on recupere bien RuntimeException en sortie de updateUser si la m
     }
 
     @Test
-    /*garantir que si l user n existe pas, la methode persist de l entity manager a bien ete appele au moins 2 fois et au plus 5 fois
-     Ce genre de methode de test est a manipuler avec precaution ... Eviter de reproduire ca dans votre code !
-*/
+    /*
+    Type : Test Comportement
+    Vérifier que l appel a l'entity manager persist a bien été effectué au moins 2 fois et au plus 5 fois
+    Méthode : createUser
+    */
+
     public void when_creation_of_a_new_user_then_between_2_and_5_calls_to_entityManager_persist() throws UserAlreadyExistsException {
         //given
 
@@ -74,11 +80,12 @@ verifier que l on recupere bien RuntimeException en sortie de updateUser si la m
 
     }
 
-    @Test
-    /*garantir que si l user existe, la methode persist de l entity manager n a jamais ete appelle
-    2 moyens d y arriver
-     Ce genre de methode de test est a manipuler avec precaution ... Eviter de reproduire ca dans votre code !
+    /*
+    Type : Test Comportement
+    Vérifier que si l'utilisateur existe, la methode persiste n'a jamais été appelée
+    Méthode : createUser
     */
+    @Test
     public void when_the_login_already_exist_then_persist_never_called_1() throws UserAlreadyExistsException {
         //given
         when(entityManager.find(User.class, user.getLogin())).thenReturn(user);
@@ -95,8 +102,11 @@ verifier que l on recupere bien RuntimeException en sortie de updateUser si la m
     }
 
     /*
-    utilisation de verifyNoMoreInteractions - a utiliser avec precaution
+    Type : Test Comportement
+    Vérifier que si l'utilisateur existe, la methode persiste n'a jamais été appelée - 2eme alternative avec verifyNoMoreInteractions
+    Méthode : createUser
     */
+
     @Test
     public void when_the_login_already_exist_then_persist_never_called_2() throws UserAlreadyExistsException {
         //given

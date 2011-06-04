@@ -15,7 +15,6 @@ import tudu.service.UserService;
 import static org.fest.assertions.Assertions.assertThat;
 import static org.mockito.Answers.RETURNS_SMART_NULLS;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.BDDMockito.willReturn;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
 
@@ -32,6 +31,7 @@ public class Level2AdministrationControllerTest {
 
     /*
      * - Vérifier qu'aucune interactions n'a lieu lorsque la page demandée n'est ni "configuration" ni "users"
+     * Méthode :  display
      */
     @Test
     public void display_should_not_interact_when_page_different_than_configuration_or_users() throws Exception {
@@ -41,8 +41,9 @@ public class Level2AdministrationControllerTest {
     }
 
     /*
-*
-*  Vérifier dans un test que pour la page "configuration" il n'y a pas d'interaction avec userService.
+    *
+    *  Vérifier dans un test que pour la page "configuration" il n'y a pas d'interaction avec userService.
+    * Méthode :  display
     */
     @Test
     public void display_should_read_configService_properties_when_page_is_configuration() throws Exception {
@@ -57,37 +58,10 @@ public class Level2AdministrationControllerTest {
         assertThat(mv.getModelMap().get("page")).isEqualTo("configuration");
     }
 
-    /*
-     * - Vérifier que le configService.updateEmailProperties est bien appelé en ne vérifiant que les valeurs user et password
-    */
-    @Test
-    public void update_should_update_smtp_config_and_nothing_else() throws Exception {
-        // given
-        AdministrationController spiedAdmnController = spy(adminController);
-        willReturn(new ModelAndView()).given(spiedAdmnController).display(anyString());
-
-        AdministrationModel adminModel = new AdministrationModel();
-        adminModel.setAction("configuration");
-        adminModel.setSmtpUser("the user");
-        adminModel.setSmtpPassword("password");
-
-        // when
-        spiedAdmnController.update(adminModel);
-
-        // then
-        verify(cfgService).updateEmailProperties(
-                anyString(),
-                anyString(),
-                eq("the user"),
-                eq("password"),
-                anyString()
-        );
-
-        verifyZeroInteractions(userService);
-    }
 
     /*
     * - Vérifer que pour l'action "enableUser" le service afférent est appelé et que disableUser ne l'est pas
+    * Méthode :  update
     */
     @Test
     public void update_enable_user_on_enableUser_action() throws Exception {
@@ -103,6 +77,7 @@ public class Level2AdministrationControllerTest {
 
     /*
     * - Vérifer que pour l'action "disableUser" le service afférent est appelé et que enableUser ne l'est pas (d'une manière différente)
+    * Méthode :  update
     */
     @Test
     public void update_can_disable_user_on_disableUser_action() throws Exception {
@@ -117,8 +92,9 @@ public class Level2AdministrationControllerTest {
     }
 
     /*
-   *
-   * - Vérifier que pour l'action appelle findUsersByLogin après un enableUser ou un disableUser
+    *
+    *  Vérifier que pour l'action appelle findUsersByLogin après un enableUser ou un disableUser
+    * Méthode :  update
     */
     @Test
     public void update_should_fetch_users_on_login_after_disabling_suer() throws Exception {
