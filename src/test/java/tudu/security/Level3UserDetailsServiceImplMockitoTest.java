@@ -63,4 +63,5 @@ public class Level3UserDetailsServiceImplMockitoTest {
 
         verify(userService);
     }
+    // Pour aller plus loin : Should you only mock types that you own : http://stackoverflow.com/questions/1906344/should-you-only-mock-types-you-own
 }
