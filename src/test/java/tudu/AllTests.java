@@ -6,11 +6,11 @@ import org.junit.runners.Suite.SuiteClasses;
 import tudu.domain.comparator.*;
 import tudu.domain.model.TodoTest;
 import tudu.integration.IntegrationTest;
+import tudu.security.Level1UserDetailsServiceImplMockitoTest;
+import tudu.security.Level2AttentionMockitoTest;
+import tudu.security.Level2UserDetailsServiceImplMockitoTest;
 import tudu.security.UserDetailsServiceImplTest;
-import tudu.service.impl.ConfigurationServiceImplTest;
-import tudu.service.impl.TodoListsServiceImplTest;
-import tudu.service.impl.TodosServiceImplTest;
-import tudu.service.impl.UserServiceImplTest;
+import tudu.service.impl.*;
 import tudu.web.dwr.impl.TodoListsDwrImplTest;
 import tudu.web.dwr.impl.TodosDwrImplTest;
 import tudu.web.servlet.BackupServletTest;
@@ -36,7 +36,14 @@ import tudu.web.servlet.RssFeedServletTest;
         ConfigurationServiceImplTest.class,
         TodoListsServiceImplTest.class,
         TodosServiceImplTest.class,
-        UserServiceImplTest.class,
+        Level1UserDetailsServiceImplMockitoTest.class,
+        Level1UserServiceImplMockitoTest.class,
+        Level1UserDetailsServiceImplMockitoTest.class,
+        Level2UserServiceImplMockitoTest.class,
+        Level2UserDetailsServiceImplMockitoTest.class,
+        Level3UserServiceImplMockitoTest.class,
+        Level3UserServiceImplMockitoTest.class,
+        Level2AttentionMockitoTest.class,
         TodoListsDwrImplTest.class,
         TodosDwrImplTest.class,
         BackupServletTest.class,

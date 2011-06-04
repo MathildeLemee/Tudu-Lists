@@ -8,7 +8,10 @@ import tudu.service.UserAlreadyExistsException;
 import static org.junit.Assert.*;
 
 public class UserServiceImplTest {
+   /*
 
+   UserServiceImplTest
+    */
     User user = new User();
 
     UserServiceImpl userService = new UserServiceImpl();

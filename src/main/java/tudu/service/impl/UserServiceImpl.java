@@ -153,12 +153,7 @@ public class UserServiceImpl implements UserService {
         user.getRoles().add(role);
         em.persist(user);
 
-        TodoList todoList = new TodoList();
-        todoList.setName("Welcome!");
-        todoList.setLastUpdate(Calendar.getInstance().getTime());
-        em.persist(todoList);
-        user.getTodoLists().add(todoList);
-        todoList.getUsers().add(user);
+        TodoList todoList = createNewTodoList(user);
 
         Todo welcomeTodo = new Todo();
         welcomeTodo.setDescription("Welcome to Tudu Lists!");
@@ -169,6 +164,16 @@ public class UserServiceImpl implements UserService {
         todoList.getTodos().add(welcomeTodo);
         em.persist(welcomeTodo);
         em.persist(todoList);
+    }
+
+    public TodoList createNewTodoList(User user) {
+        TodoList todoList = new TodoList();
+        todoList.setName("Welcome!");
+        todoList.setLastUpdate(Calendar.getInstance().getTime());
+        em.persist(todoList);
+        user.getTodoLists().add(todoList);
+        todoList.getUsers().add(user);
+        return todoList;
     }
 
     /**
@@ -214,5 +219,26 @@ public class UserServiceImpl implements UserService {
                         + "Regards,\n\n" + "Tudu Lists.");
 
         sender.send(message);
+    }
+
+    /**
+     * Find a user by login.
+     *
+     * @see tudu.service.UserService#findUser(String)
+     */
+    @Transactional(readOnly = true)
+    public final User findUserJoke(String login) {
+        User user = em.find(User.class, login);
+        if (user == null) {
+            if (log.isDebugEnabled()) {
+                log.debug("Could not find User ID=" + login);
+            }
+            throw new ObjectRetrievalFailureException(User.class, login);
+        }
+        if (log.isDebugEnabled()) {
+            log.debug("User ID=" + login + " found, user is called "
+                    + user.getFirstName() + " " + user.getLastName());
+        }
+        return user;
     }
 }

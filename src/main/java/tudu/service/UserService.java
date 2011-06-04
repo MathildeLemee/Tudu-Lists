@@ -26,6 +26,15 @@ public interface UserService {
     User findUser(String login);
 
     /**
+       * Find a user by login.
+       *
+       * @param login
+       *            The user login
+       * @return The user value object
+       */
+     User findUserJoke(String login);
+
+    /**
      * Find all users with a login starting with the "loginStart" string.
      */
     List<User> findUsersByLogin(String loginStart);
