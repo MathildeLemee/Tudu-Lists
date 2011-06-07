@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import tudu.domain.Role;
 import tudu.domain.User;
 import tudu.service.UserService;
+import tudu.service.impl.UserServiceImpl;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -32,7 +33,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private final Log log = LogFactory.getLog(UserDetailsServiceImpl.class);
 
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userService;
 
     /**
      * Load a user for Spring Security.
@@ -47,6 +48,34 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user;
         try {
             user = userService.findUser(login);
+        } catch (ObjectRetrievalFailureException orfe) {
+            throw new UsernameNotFoundException("User '" + login
+                    + "' could not be found.");
+        }
+        user.setLastAccessDate(Calendar.getInstance().getTime());
+
+        Set<Role> roles = user.getRoles();
+
+        Collection<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+        for (Role role : roles) {
+            authorities.add(new GrantedAuthorityImpl(role.getRole()));
+        }
+
+        return new org.springframework.security.core.userdetails.User(login,
+                user.getPassword(), user.isEnabled(), true, true, true,
+                authorities);
+    }
+
+	@Transactional
+    public UserDetails loadUserByUsernameJoke(String login)
+            throws UsernameNotFoundException, DataAccessException {
+        login = login.toLowerCase();
+        if (log.isDebugEnabled()) {
+            log.debug("Security verification for user '" + login + "'");
+        }
+        User user;
+        try {
+            user = userService.findUserJoke(login);
         } catch (ObjectRetrievalFailureException orfe) {
             throw new UsernameNotFoundException("User '" + login
                     + "' could not be found.");

@@ -8,7 +8,7 @@
                             http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <context:property-placeholder
-            location="classpath:/META-INF/spring/infrastructure/prod.properties,
+            location="classpath:/META-INF/spring/infrastructure/dev.properties,
                       classpath*:infrastructure.properties"/>
 
     <bean id="dataSource"

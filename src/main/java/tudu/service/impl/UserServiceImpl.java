@@ -26,9 +26,9 @@ import java.util.List;
  *
  * @author Julien Dubois
  */
-@Service
+@Service("userService")
 @Transactional
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl  {
 
     private final Log log = LogFactory.getLog(UserServiceImpl.class);
 
