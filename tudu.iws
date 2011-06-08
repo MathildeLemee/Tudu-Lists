@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="240a5786-c378-4e5a-bcc9-1c95d6efb01b" name="Default" comment="submit and cancel JavaScript functions">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tudu/security/Level1UserDetailsServiceImplMockitoTest.java" afterPath="$PROJECT_DIR$/src/test/java/tudu/security/Level1UserDetailsServiceImplMockitoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java" afterPath="$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java" afterPath="$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tudu/security/Level3UserDetailsServiceImplMockitoTest.java" afterPath="$PROJECT_DIR$/src/test/java/tudu/security/Level3UserDetailsServiceImplMockitoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tudu.iws" afterPath="$PROJECT_DIR$/tudu.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java" afterPath="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="tudu.iws" />
@@ -36,6 +32,19 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/tudu/service/impl/ConfigurationServiceImpl.java" line="44" class="tudu.service.impl.ConfigurationServiceImpl" package="tudu.service.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java" line="44" class="tudu.service.impl.Level3UserServiceImplMockitoTest" package="tudu.service.impl">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -98,19 +107,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Level3UserServiceImplMockitoTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Level3UserServiceImplMockitoTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+            <state line="43" column="33" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.29933482">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level3UserDetailsServiceImplMockitoTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Level3UserDetailsServiceImplMockitoTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level3UserDetailsServiceImplMockitoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.17013232">
+            <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level2UserDetailsServiceImplMockitoTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,24 +138,6 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="75" column="0" selection-start="1994" selection-end="1994" vertical-scroll-proportion="-15.807693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level2AttentionMockitoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level2UserServiceImplMockitoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level2UserServiceImplMockitoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +164,7 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="16" selection-start="7639" selection-end="7639" vertical-scroll-proportion="0.0">
+            <state line="173" column="8" selection-start="5495" selection-end="5495" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,6 +177,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level2AttentionMockitoTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="13" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,19 +216,19 @@
         <option value="$PROJECT_DIR$/src/test/java/tudu/security/UserDetailsServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level1UserServiceImplMockitoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level2UserServiceImplMockitoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/web/mvc/Level1AdministrationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/web/mvc/Level2AdministrationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/AllTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/web/mvc/Level3AdministrationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/web/filter/Level3MonitorFilterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tudu/security/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/security/Level1UserDetailsServiceImplMockitoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tudu/security/Level3UserDetailsServiceImplMockitoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java" />
       </list>
     </option>
   </component>
@@ -706,6 +715,100 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tudu-Lists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tudu-Lists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tudu-Lists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tudu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -786,30 +889,7 @@
       <recent name="tudu.web.mvc" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in tudu">
-    <configuration default="false" name="Level2AttentionMockitoTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <module name="tudu" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tudu.security" />
-      <option name="MAIN_CLASS_NAME" value="tudu.security.Level2AttentionMockitoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Level3UserServiceImplMockitoTest.new_todolist_should_be_named_welcome_1">
     <configuration default="false" name="Level2AttentionMockitoTest.testLoadUserByUsername" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
       <module name="tudu" />
@@ -900,6 +980,33 @@
       <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Level3UserServiceImplMockitoTest.new_todolist_should_be_named_welcome_1" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="emma" />
+      <module name="tudu" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tudu.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="tudu.service.impl.Level3UserServiceImplMockitoTest" />
+      <option name="METHOD_NAME" value="new_todolist_should_be_named_welcome_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63460" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -1084,11 +1191,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.tudu [org.mortbay.jetty:maven-jetty-plugin:6.1.23:run]" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Level2AttentionMockitoTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Level2AttentionMockitoTest.testLoadUserByUsername" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Level1UserDetailsServiceImplMockitoTest.userDetails_should_correspond_to_the_user_found" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Level3UserDetailsServiceImplMockitoTest.testLoadUserByUsername" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in tudu" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Level2AttentionMockitoTest.testLoadUserByUsername" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Level1UserDetailsServiceImplMockitoTest.userDetails_should_correspond_to_the_user_found" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Level3UserDetailsServiceImplMockitoTest.testLoadUserByUsername" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in tudu" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Level3UserServiceImplMockitoTest.new_todolist_should_be_named_welcome_1" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1210,17 +1317,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925835" sideWeight="0.0" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39849624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243824" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JavaRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2867884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18643162" sideWeight="0.67776585" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18643162" sideWeight="0.60150373" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15598291" sideWeight="0.5658031" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3402778" sideWeight="0.67776585" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3402778" sideWeight="0.60150373" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32223415" sideWeight="0.9978134" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32223415" sideWeight="0.9978134" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1314,20 +1421,6 @@
         <state line="7" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level2UserServiceImplMockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" />
@@ -1347,16 +1440,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tudu/web/mvc/RecoverPasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="16" selection-start="7639" selection-end="7639" vertical-scroll-proportion="0.0">
+        <state line="12" column="19" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tudu/web/mvc/RecoverPasswordController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+        <state line="75" column="0" selection-start="1994" selection-end="1994" vertical-scroll-proportion="-15.807693">
           <folding />
         </state>
       </provider>
@@ -1370,23 +1463,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2AttentionMockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+        <state line="25" column="13" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level2UserDetailsServiceImplMockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="1994" selection-end="1994" vertical-scroll-proportion="-15.807693">
+        <state line="16" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tudu/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="8" selection-start="5495" selection-end="5495" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tudu/security/Level3UserDetailsServiceImplMockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.17013232">
+        <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tudu/service/impl/Level3UserServiceImplMockitoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="33" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.29933482">
           <folding />
         </state>
       </provider>

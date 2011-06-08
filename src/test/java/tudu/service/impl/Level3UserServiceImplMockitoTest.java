@@ -7,6 +7,7 @@ import tudu.domain.TodoList;
 import tudu.domain.User;
 import tudu.service.UserAlreadyExistsException;
 
+import java.util.Set;
 import javax.persistence.EntityManager;
 
 import static org.junit.Assert.assertEquals;
@@ -41,7 +42,7 @@ public class Level3UserServiceImplMockitoTest {
 
         //when
         userService.createNewTodoList(user);
-
+		Set<TodoList> todos = user.getTodoLists();
         //then
         verify(entityManager).persist(userCaptured.capture());
         TodoList todo = userCaptured.getValue();

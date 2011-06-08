@@ -171,7 +171,6 @@ public class UserServiceImpl  {
         todoList.setName("Welcome!");
         todoList.setLastUpdate(Calendar.getInstance().getTime());
         em.persist(todoList);
-        user.getTodoLists().add(todoList);
         todoList.getUsers().add(user);
         return todoList;
     }
