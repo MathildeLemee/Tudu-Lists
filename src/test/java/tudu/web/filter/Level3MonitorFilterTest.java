@@ -23,6 +23,11 @@ public class Level3MonitorFilterTest {
     public void test_authentication_1() throws IOException, ServletException {
     }
 /*
+il suffit de refactorer le code parent, l appel a la librairie Spring Security (SecuritContext.xxxx doit etre
+effectuer dans un service a part bien distinct.
+
+Une idee tres rapide de ce que l on peut avoir envie de faire et que l on ne doit pas faire ...
+
 @Test
 public void test_authentication_1() throws IOException, ServletException {
 

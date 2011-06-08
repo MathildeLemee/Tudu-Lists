@@ -30,6 +30,7 @@ public class Level3UserServiceImplMockitoTest {
         user.setFirstName("First name");
         user.setLastName("Last name");
     }
+	  //MODIFICATION DU SUJET / il est maintenant impossible de faire un simple user.getTodoLists
 
     /*
     Vérifier que la liste todo a bien pour name Welcome!
