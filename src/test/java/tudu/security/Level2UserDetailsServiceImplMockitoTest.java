@@ -9,13 +9,14 @@ import org.springframework.orm.ObjectRetrievalFailureException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import tudu.service.UserService;
+import tudu.service.impl.UserServiceImpl;
 
 import static org.mockito.Mockito.when;
 
 //Niveau2
 public class Level2UserDetailsServiceImplMockitoTest {
     @Mock
-    UserService userService;
+	UserServiceImpl userService;
     @InjectMocks
     UserDetailsServiceImpl userDetailsService = new UserDetailsServiceImpl();
 

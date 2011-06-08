@@ -22,7 +22,7 @@ import static org.mockito.Mockito.when;
 
 //Niveau2
 //Enlever le @Ignore et trouver pourquoi la deuxieme methode ne fonctionne pas comme prevue comparee a la premiere
-
+ @Ignore
 public class Level2AttentionMockitoTest {
     @Mock
 	UserServiceImpl userService;
